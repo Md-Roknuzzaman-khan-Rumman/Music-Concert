@@ -1,0 +1,19 @@
+#concert {
+  display: flex;
+  margin: 20px 0 0 0;
+}
+
+#singers_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* border: 1px solid black; */
+  width: 80%;
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: stretch;
+}
+
+#add_singers_container {
+  /* border: 1px solid black; */
+  width: 20%;
+}

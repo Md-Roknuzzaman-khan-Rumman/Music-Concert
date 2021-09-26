@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: 2px dashed skyblue;
+  background-color: rgb(219, 238, 253);
+}
+
+#logo {
+  width: 150px;
+}
+
+#header_info {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.budget_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#total_budget {
+  font-size: 30px;
+  font-weight: 400;
+}
