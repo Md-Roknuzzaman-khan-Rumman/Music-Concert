@@ -13,6 +13,8 @@ const Concert = () => {
     .then(data => setSingers(data))
   },[])
 
+
+  // button handler 
   const handleAddToCard = singer => {
     const newCart = [...carts, singer];
     setCarts(newCart);
@@ -20,12 +22,14 @@ const Concert = () => {
 
   return (
     <div id="concert">
-      <div id="singers_container">
+      {/* all singers list */}
+      <div id="singers_container">  
         {
           singers.map(singer => <Singers key={singer.key} singers={singer} handleAddToCard= {handleAddToCard} />)
         }
       </div>
       <div id="add_singers_container">
+        {/* cards */}
       <Cart carts={carts}/>
       </div>
     </div>
